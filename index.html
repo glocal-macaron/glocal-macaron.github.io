@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  HTML 진입점
+  
+  이 파일은 브라우저가 처음 로드하는 HTML 파일입니다.
+  Vue 애플리케이션이 마운트될 DOM 요소와 JavaScript 진입점을 정의합니다.
+-->
+<html lang="">
+  <head>
+    <!-- 문자 인코딩 설정: UTF-8로 한글 등 모든 문자를 올바르게 표시 -->
+    <meta charset="UTF-8">
+    
+    <!-- 파비콘: 브라우저 탭에 표시되는 아이콘 -->
+    <link rel="icon" href="/favicon.ico">
+    
+    <!-- 
+      뷰포트 설정: 반응형 웹 디자인을 위한 설정
+      width=device-width: 디바이스 너비에 맞춤
+      initial-scale=1.0: 초기 확대/축소 비율 100%
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 브라우저 탭에 표시되는 제목 -->
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-DL_S-XiE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C60rHRZn.css">
+  </head>
+  <body>
+    <!-- 
+      Vue 애플리케이션이 마운트될 DOM 요소
+      
+      main.js에서 app.mount('#app')을 호출하면
+      이 div 요소에 Vue 애플리케이션이 렌더링됩니다.
+      이 요소의 내용은 Vue에 의해 완전히 제어됩니다.
+    -->
+    <div id="app"></div>
+    
+    <!-- 
+      JavaScript 진입점
+      
+      type="module": ES 모듈로 로드 (import/export 사용 가능)
+      src="/src/main.js": Vite 개발 서버가 이 경로를 처리하여
+      main.js 파일을 실행합니다.
+      
+      Vite의 동작:
+      1. 브라우저가 이 스크립트를 요청
+      2. Vite 개발 서버가 main.js를 처리
+      3. main.js에서 import한 모든 파일들을 해석하고 변환
+      4. 브라우저에 전달하여 실행
+    -->
+  </body>
+</html>
